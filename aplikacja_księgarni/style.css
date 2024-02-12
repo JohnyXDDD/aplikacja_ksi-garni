@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    color: black;
+}
+
+body {
+    margin: 0;
+    padding-bottom: 64px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+header>h1 {
+    text-align: center;
+}
+
+.submenu {
+    width: 300px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: 700;
+}
+
+.submenu a {
+    color: rgb(17, 48, 161);
+}
+
+.query-containter {
+    padding: 0 2%;
+}
+
+.query-containter,
+.form-box {
+    margin: 0 auto;
+    max-width: 500px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+h2 {
+    text-align: center;
+}
+
+.query {
+    display: flex;
+    width: 100%;
+    margin: 4px 0;
+}
+
+button {
+    padding: 4px 8px;
+    outline: none;
+    border: 1px solid black;
+    border-radius: 8px;
+    background: none;
+    font-weight: 700;
+    cursor: pointer;
+    width: 100%;
+    height: 30px;
+}
+
+.query input,
+.big-form input {
+    margin-left: 8px;
+    height: 30px;
+    padding: 4px 8px;
+}
+
+.big-form hr {
+    width: 100%;
+}
+
+.modal {
+    position: fixed;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 2%;
+    height: 100px;
+    width: 300px;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 16px;
+    background-color: white;
+}
+
+.small-form {
+    display: flex;
+    width: 100%;
+}
+
+.small-form button {
+    width: 25%;
+}
+
+.small-form input {
+    width: 75%;
+    margin-right: 8px;
+    padding: 0 8px;
+}
+
+.big-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: stretch;
+}
+
+.big-form input {
+    margin: 0;
+    margin-bottom: 8px;
+}
+
+.detail {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 50% 50%;
+}
+
+.detail-book {
+    grid-column: 1 / 3;
+}
+
+h4 {
+    text-align: center;
+    margin: 8px 0;
+}
+
+.deleteBtn {
+    grid-column: 1/3;
+}
+
+.deleteBtn:hover {
+    background-color: rgb(190, 48, 48);
+}
+
+.authors input {
+    width: 100%;
+}
+
+table,
+td,
+th {
+    border: 1px solid black;
+    text-align: center;
+    border-collapse: collapse;
+    vertical-align: middle;
+}
+
+td,
+th {
+    padding: 5px;
+}
+
+table {
+    margin: 0 auto;
+}
+
+#result {
+    max-width: 1000px;
+    margin: 0 auto;
+
+}
+
+.first-row {
+    position: sticky;
+    top: 0;
+    background: white;
+}
+
+input {
+    text-transform: capitalize;
+}
